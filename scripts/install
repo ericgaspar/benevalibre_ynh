@@ -35,10 +35,13 @@ ynh_config_add_systemd
 yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
 
 #=================================================
-# SETUP APPLICATION WITH CURL
+# INSTALL THE APP
 #=================================================
+ynh_script_progression "Installing $app..."
 
-make init
+pushd "$install_dir"
+ 	make init
+popd
 
 #=================================================
 # START SYSTEMD SERVICE

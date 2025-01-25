@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+Bénévalibre is an open-source software package that makes it easier for voluntary organisations to manage and promote volunteer work.

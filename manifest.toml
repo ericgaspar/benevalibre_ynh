@@ -3,8 +3,8 @@
 packaging_format = 2
 
 id = "benevalibre"
-name = "Benevalibre"
-description.en = "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)"
+name = "Bénévalibre"
+description.en = "Makes it easier to manage and promote voluntary work in associations"
 description.fr = "Facilite la gestion et la valorisation du bénévolat dans les associations"
 
 version = "1.6.2~ynh1"
@@ -12,10 +12,10 @@ version = "1.6.2~ynh1"
 maintainers = ["eric_G"]
 
 [upstream]
+license = "AGPL-3.0-only"
 website = "https://benevalibre.org/"
 demo = "https://demo.example.com"
-admindoc = "https://yunohost.org/packaging_apps"
-userdoc = "https://yunohost.org/apps"
+userdoc = "https://benevalibre.org/site/tutoriel-benevole/"
 code = "https://some.forge.com/example/example"
 
 [integration]
@@ -35,28 +35,9 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/example"
-
     [install.init_main_permission]
     type = "group"
     default = "visitors"
-
-    [install.language]
-    ask.en = "Choose the application language"
-    ask.fr = "Choisissez la langue de l'application"
-    type = "select"
-    choices = ["fr", "en"]
-    default = "fr"
-
-    [install.admin]
-    type = "user"
-
-    [install.password]
-    help.en = "Use the help field to add an information for the admin about this question."
-    help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-    type = "password"
 
 [resources]
 
